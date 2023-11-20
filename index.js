@@ -37,14 +37,6 @@ function signupvalidator({user_name='',email='',phone=0,password=''}){
     }
     return result;
 }
-const signupData = {
-    user_name:'Username',
-    email:'example@gmail.com',
-    phone:1234567990,
-    password:'NewPassword@123'
-}
-console.log(signupvalidator(signupData))
-
 module.exports={
     signupvalidator
 }
