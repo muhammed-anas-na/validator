@@ -1,6 +1,6 @@
 {
   "name": "@anas-na/validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Form validator",
   "main": "index.js",
   "repository": {
