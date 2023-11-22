@@ -4,6 +4,14 @@ const name_regex = /\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+/
 const email_regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 const phone_regex = /^\d{10}$/
 
+function checkPhone(number){
+    if(!phone_regex.test(number)){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 function isUser_name(user_name){
     if(!name_regex.test(user_name)){
         return false;
@@ -63,5 +71,6 @@ module.exports={
     signupvalidator,
     isEmail,
     isUser_name,
-    checkPass
+    checkPass,
+    checkPhone,
 }
